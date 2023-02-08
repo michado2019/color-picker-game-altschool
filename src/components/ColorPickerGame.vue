@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import { useColorPicker } from "../composables/composable";
+import { Composable } from "../composables/composable";
 
 
 export default {
   setup() {
-    const { colors, message, matchColor } = useColorPicker();
+    const { colors, message, matchColor } = Composable();
     return { colors, message, matchColor };
   },
 };
